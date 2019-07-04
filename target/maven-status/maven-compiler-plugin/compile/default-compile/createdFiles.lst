@@ -1,0 +1,5 @@
+org\afdemp\cb8\springjpa\configuration\SpringJPAInitializer.class
+org\afdemp\cb8\springjpa\configuration\SpringJPAConfiguration.class
+org\afdemp\cb8\springjpa\entities\Trainer_.class
+org\afdemp\cb8\springjpa\controllers\TrainersController.class
+org\afdemp\cb8\springjpa\entities\Trainer.class
