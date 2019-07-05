@@ -21,6 +21,7 @@
     </head>
     <body>
         <h1>Hello World! ${greeting}</h1>
+        <h2>${id}</h2>
         <table border="1" id="trainers">
             <thead>
                 <tr>
