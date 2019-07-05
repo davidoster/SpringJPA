@@ -24,7 +24,12 @@ public class TrainersController {
         @RequestMapping(value = "/trainers", method = RequestMethod.GET)
 	public String getAllTrainers(ModelMap model) {
 		model.addAttribute("greeting", "Trainers");
-		return "index";
+		return "trainers";
 	}
 
+        
+        
+        
+        
+        
 }
