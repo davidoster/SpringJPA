@@ -7,31 +7,21 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 @Controller
-@RequestMapping("/trainers")
+@RequestMapping(value={"/", "/trainers"})
 public class TrainersController {
-
-//	@RequestMapping(method = RequestMethod.GET)
-//	public String sayHello(ModelMap model) {
-//		model.addAttribute("greeting", "Hello World from Spring 4 MVC");
-//		return "index";
-//	}
-
+    
+        @RequestMapping(method = RequestMethod.GET)
+	public String getAllTrainers(ModelMap model) {
+		model.addAttribute("greeting", "Trainers");
+		return "trainers";
+	}
+        
 	@RequestMapping(value = "/update/{id}", method = RequestMethod.GET)
 	public String sayHelloAgain(ModelMap model, @PathVariable String id) {
 		model.addAttribute("greeting", "Hello World Again, from Spring 4 MVC");
                 model.addAttribute("id", "This is the id from the path:" + id);
 		return "trainers";
 	}
-        
-        @RequestMapping(value="/", method = RequestMethod.GET)
-	public String getAllTrainers(ModelMap model) {
-		model.addAttribute("greeting", "Trainers");
-		return "trainers";
-	}
-
-        
-        
-        
         
         
 }
